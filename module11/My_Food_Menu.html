@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Menu</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ole&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
             background-color: #fffacd;
             border-radius: 5px;
             display: inline-block;
-            padding: 5px;
+            padding: 5px 10px;
         }
 
         ul {
@@ -60,7 +61,7 @@
 
         .last::first-letter {
             color: #ff4500;
-            font-size: 30px;
+            font-size: 35px;
             font-weight: bold;
         }
 
@@ -75,23 +76,23 @@
             background-color: white;
             color: #ff4500;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 20px;
             margin: 10px;
-            display: inline-block;
             border-radius: 5px;
+            display: inline-block;
             cursor: pointer;
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
-        /* Hover effect */
+        /* Hover */
         .btn a:hover,
         .btn button:hover:not(:disabled) {
             background-color: #ff4500;
             color: white;
         }
 
-        /* Active effect */
+        /* Active */
         .btn a:active,
         .btn button:active:not(:disabled) {
             background-color: darkred;
@@ -99,7 +100,14 @@
             transform: scale(0.95);
         }
 
-        /* Disabled button */
+        /* Focus */
+        .btn a:focus,
+        .btn button:focus {
+            outline: 4px solid gold;
+            outline-offset: 4px;
+        }
+
+        /* Disabled */
         .btn button:disabled {
             background-color: lightgray;
             color: gray;
@@ -134,6 +142,7 @@
 
     <div class="btn">
         <a href="#">Order Now</a>
+        <button>Reserve Table</button>
         <button disabled>Explore More</button>
     </div>
 
