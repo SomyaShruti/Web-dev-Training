@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ole&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background-color: #f0e68c; /* Light yellow background */
+            font-family:"Times New Roman", serif;
+            text-align: center;
+        }
+        h1{
+            color: #ff4500; /* Orange red color for the title */
+            text-align: center;
+           margin-top: 10px;
+           font-family:"Ole", sans-serif;
+           font-size: 80px;
+           padding:0px;
+           margin-bottom:0px;
+        }
+        h1 + p{
+            text-align: center;
+            font-size: 25px;
+            color:darkorange;
+            background-color: #fffacd; /* Lemon chiffon background for the paragraph */
+            border-radius: 5px;
+            display: inline-block;
+            padding: 5px;
+        }
+        ul{
+            list-style-type: none; /* Remove default list styling */
+            padding: 0;
+        }
+        ul>li{
+            padding: 10px;
+            color:red;
+            background-color: #fffacd; /* Lemon chiffon background for list items */
+            border-radius: 5px;
+            margin: 6px auto;
+            width: 300px;
+            font-size: 20px;
+        }
+        ul li:nth-child(3){
+            background-color: #dfac56; /* Moccasin background for the third item */
+            border-radius: 5px;
+            width: 300px;
+        }
+        .last{
+            color: #ff44006b; 
+            font-size: 25px;
+        }
+        .last::first-letter{
+            color: #ff4500; /* Orange red color for the first letter of the last paragraph */
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .btn>a{
+            border: 2px solid #ff4500; /* Orange red border for the button container */
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px;
+            color: #ff4500; /* Orange red text color for the buttons */
+        }
+        .btn>a:hover{
+            background-color: #ff4500; /* Orange red background on hover */
+            color: white; /* White text on hover */
+            height: 40px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Food Menu</h1>
+    <p>You won't stop licking your fingers!</p>
+    <ul>
+        <li>Pretty Pizza</li>
+        <li>Blasting Burgers</li>
+        <li>Crazy Chicken Wings-Chef's Special</li>
+        <li>Fabulous Fries</li>
+        <li>Delicious Donuts</li>
+        <li>Scrumptious Sandwiches</li>
+        <li>Yummy Yogurt</li>
+        <li>Poppin Pasta</li>
+        <li>Fantastic Fish and Chips</li>
+    </ul>
+    <p class="last">Order now to experience the mind-boggling flavors!</p>
+    <div class="btn">
+        <a href="#">Order Now</a>
+        <a href="#">Explore More</a>
+    </div>
+
+</body>
+</html>
