@@ -1,0 +1,21 @@
+header{
+    background-image:linear-gradient(to right, purple,coral);
+}
+body{
+    background-image:linear-gradient(to right, darkblue,navy);
+}
+.star{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation:twinkie 2s infinite alternate;
+}
+@keyframes twinkie{
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: white;
+    }
+}
